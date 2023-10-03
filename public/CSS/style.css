@@ -1,0 +1,4 @@
+.SW1{
+    width: 25%; /* Réduisez la largeur de l'image à 25% de sa taille d'origine */
+    height: auto; /* Conservez le ratio hauteur/largeur */
+}
