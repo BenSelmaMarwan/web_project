@@ -8,7 +8,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 // Route pour la page d'accueil
 app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, 'public','HTML', 'home.html'));
+  res.sendFile(path.join(__dirname, 'HTML', 'home.html'));
 });
 
 // Port sur lequel l'application Express écoutera

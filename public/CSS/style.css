@@ -1,4 +1,173 @@
+
+body {
+    background-color: #d0d0d0;
+}
 .SW1{
-    width: 25%; /* Réduisez la largeur de l'image à 25% de sa taille d'origine */
+    width: 7%;
+    height: auto; 
+    position: absolute; /* Positionnement absolu */
+    top: 520px; /* Position en haut (0 pixels à partir du haut) */
+    left: 390px;
+    border: 4px solid white;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+/* Lorsqu'un survol se produit, agrandissez l'image de 25% */
+img.SW1:hover {
+  transform: scale(1.25); /* Agrandit l'image de 25% (1.25 fois sa taille initiale) */
+}
+
+.SW2{
+    width: 6.7%;
+    height: auto; 
+    position: absolute; /* Positionnement absolu */
+    top: 520px; /* Position en haut (0 pixels à partir du haut) */
+    left: 630px;
+    border: 4px solid white;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+/* Lorsqu'un survol se produit, agrandissez l'image de 25% */
+img.SW2:hover {
+  transform: scale(1.25); /* Agrandit l'image de 25% (1.25 fois sa taille initiale) */
+}
+.TCW{
+    width: 7%;
+    height: auto; 
+    position: absolute; /* Positionnement absolu */
+    top: 520px; /* Position en haut (0 pixels à partir du haut) */
+    left: 870px;
+    border: 4px solid white;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+/* Lorsqu'un survol se produit, agrandissez l'image de 25% */
+img.TCW:hover {
+  transform: scale(1.25); /* Agrandit l'image de 25% (1.25 fois sa taille initiale) */
+}
+.SW3{
+    width: 7%;
+    height: auto; 
+    position: absolute; /* Positionnement absolu */
+    top: 650PX; /* Position en haut (0 pixels à partir du haut) */
+    left: 1190PX;
+    border: 4px solid white;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+/* Lorsqu'un survol se produit, agrandissez l'image de 25% */
+img.SW3:hover {
+  transform: scale(1.25); /* Agrandit l'image de 25% (1.25 fois sa taille initiale) */
+}
+.TBB{
+    width: 7%;
+    height: auto; 
+    position: absolute; /* Positionnement absolu */
+    top: 900px; /* Position en haut (0 pixels à partir du haut) */
+    left: 1190px;
+    border: 4px solid white;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+/* Lorsqu'un survol se produit, agrandissez l'image de 25% */
+img.TBB:hover {
+  transform: scale(1.25); /* Agrandit l'image de 25% (1.25 fois sa taille initiale) */
+}
+.solo{
+    width: 7%;
+    height: auto; 
+    position: absolute; /* Positionnement absolu */
+    top: 940px; /* Position en haut (0 pixels à partir du haut) */
+    left: 900px;
+    border: 4px solid white;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+/* Lorsqu'un survol se produit, agrandissez l'image de 25% */
+img.solo:hover {
+  transform: scale(1.25); /* Agrandit l'image de 25% (1.25 fois sa taille initiale) */
+}
+.obiwan{
+    width: 7%;
+    height: 22%; 
+    position: absolute; /* Positionnement absolu */
+    top: 940px; /* Position en haut (0 pixels à partir du haut) */
+    left: 650px;
+    border: 4px solid white;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+/* Lorsqu'un survol se produit, agrandissez l'image de 25% */
+img.obiwan:hover {
+  transform: scale(1.25); /* Agrandit l'image de 25% (1.25 fois sa taille initiale) */
+}
+.SW4{
+    width: 7%;
+    height: auto; 
+    position: absolute; /* Positionnement absolu */
+    top: 400px; /* Position en haut (0 pixels à partir du haut) */
+    left: 650px;
+}
+.SW5{
+    width: 7%;
+    height: auto; 
+    position: absolute; /* Positionnement absolu */
+    top: 400px; /* Position en haut (0 pixels à partir du haut) */
+    left: 650px;
+}
+.SW6{
+    width: 7%;
+    height: auto; 
+    position: absolute; /* Positionnement absolu */
+    top: 400px; /* Position en haut (0 pixels à partir du haut) */
+    left: 650px;
+}
+.SW7{
+    width: 7%;
+    height: auto; 
+    position: absolute; /* Positionnement absolu */
+    top: 400px; /* Position en haut (0 pixels à partir du haut) */
+    left: 650px;
+}
+.SW8{
+    width: 7%;
+    height: auto; 
+    position: absolute; /* Positionnement absolu */
+    top: 400px; /* Position en haut (0 pixels à partir du haut) */
+    left: 650px;
+}
+.SW9{
+    width: 7%;
+    height: auto; 
+    position: absolute; /* Positionnement absolu */
+    top: 400px; /* Position en haut (0 pixels à partir du haut) */
+    left: 650px;
+}
+.tube1{
+    width: 65%; /* Réduisez la largeur de l'image à 25% de sa taille d'origine */
     height: auto; /* Conservez le ratio hauteur/largeur */
+    top: 900px;
+    left: 50%;
+    position: absolute; /* Vous devez définir la position pour utiliser z-index */
+    z-index: -1; 
+    transform: translate(-50%, -50%);
+}
+.tube2{
+    width: 65%; /* Réduisez la largeur de l'image à 25% de sa taille d'origine */
+    height: auto; /* Conservez le ratio hauteur/largeur */
+    top: 1450px;
+    left: 53%;
+    position: absolute; /* Vous devez définir la position pour utiliser z-index */
+    z-index: -1; 
+    transform: translate(-50%, -50%);
+}
+h1 {
+    text-align: center;
 }
