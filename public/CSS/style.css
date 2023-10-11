@@ -1,4 +1,368 @@
+
+
 .SW1{
     width: 25%; /* Réduisez la largeur de l'image à 25% de sa taille d'origine */
     height: auto; /* Conservez le ratio hauteur/largeur */
 }
+
+.navbar {
+    background-color: #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.logo img {
+    width: 100px;
+    height: auto;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 60px;
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
+
+.nav-links li {
+    flex: 1; /* Each link takes up an equal portion of the available space */
+    text-align: center; /* Center-align the text within each link */
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+    color: #FFD700; /* Star Wars yellow */
+}
+
+body {
+    background: #000 url(/IMG/background.jpg);
+  }
+
+
+/***login.html***/
+.login-container {
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    margin-top: 20px; /* Add some spacing from the Star Wars logo */
+    border-color: #FFD700;
+  }
+  
+  .login-box {
+    max-width: 300px;
+    margin: 0 auto;
+    color: #fff;
+  }
+  
+  h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+  
+  footer {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+
+  body {
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+.center {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(../images/login-back.png);
+    background-size: cover;
+}
+
+form {
+    width: 400px;
+    height: 450px;
+    box-sizing: border-box;
+    border-radius: 5mm;
+    padding: 40px 30px;
+    backdrop-filter: blur(5px) saturate(160%);
+    -webkit-backdrop-filter: blur(5px) saturate(160%);
+    background: #000; /* Changed to solid black */
+    border: 0.5mm solid rgba(0, 0, 0, 0.65);
+    position: relative;
+}
+
+.title {
+    width: 100%;
+    font-family: poppins;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.inputs {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.inputf {
+    width: 100%;
+    height: fit-content;
+    box-sizing: border-box;
+    margin: 15px 0;
+    position: relative;
+}
+
+.input {
+    width: 100%;
+    height: 45px;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 0.55mm solid rgb(255, 255, 255);
+    background: none;
+    padding: 0 15px;
+    font-family: poppins;
+    font-size: 15px;
+    color: white;
+    outline: none;
+}
+
+.input::placeholder {
+    color: rgb(241, 232, 232);
+}
+
+.label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: white;
+    font-size: 13px;
+    font-weight: 500;
+    font-family: poppins;
+    opacity: 0;
+    z-index: -1;
+    transition: 0.25s ease-out;
+}
+
+.input:focus + .label {
+    top: -20px;
+    opacity: 1;
+    z-index: 1;
+}
+
+.input:focus::placeholder {
+    opacity: 0;
+}
+
+.input:not(:placeholder-shown) + .label {
+    top: -20px;
+    opacity: 1;
+    z-index: 1;
+}
+
+.icon {
+    color: #FFD700;
+    position: absolute;
+    right: 0px;
+    top: 50%;
+    transform: translate(0, -50%);
+    font-size: 18px;
+}
+
+.links {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 12px;
+    font-family: poppins;
+    margin-bottom: 50px;
+    color: white;
+}
+
+.links label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.links a {
+    font-weight: 600;
+    color: white;
+}
+
+.btn {
+    width: 100%;
+    height: 40px;
+    background: #FFD700;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    border-radius: 6mm;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.btn span {
+    color: rgb(40, 40, 40);
+    font-family: poppins;
+    font-size: 16px;
+}
+
+.text {
+    width: 100%;
+    font-family: poppins;
+    font-size: 13px;
+    text-align: center;
+    color: #FFD700
+}
+
+.text a {
+    color: #FFD700;
+    font-weight: 600;
+}
+
+.dots {
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.1);
+    margin: 1px;
+    animation: load 0.5s ease-out infinite alternate var(--delay);
+}
+
+@keyframes load {
+    0% {
+      background: rgb(0, 0, 0);
+    }
+    50%,
+    100% {
+      background: rgba(0, 0, 0, 0.1);
+    }
+}
+
+.btn .dots {
+    display: none;
+}
+
+.btn span {
+    display: block;
+}
+
+.btn.active .dots {
+    display: flex;
+}
+
+.btn.active span {
+    display: none;
+}
+
+.input.active {
+    animation: shake 0.25s ease-in-out 3;
+}
+
+@keyframes shake {
+    0% {
+      margin-left: 0px;
+    }
+    25% {
+      margin-left: 5px;
+    }
+    75% {
+      margin-left: -5px;
+    }
+    100% {
+      margin-left: 0px;
+    }
+}
+
+/***home***/
+.title {
+    color: #feda4a;
+    
+    font-family: 'Pathway Gothic One', sans-serif;
+}
+.fade {
+    position: relative;
+    width: 100%;
+    min-height: 60vh;
+    top: -25px;
+    background-image: linear-gradient(0deg, transparent, black 75%);
+    z-index: 1;
+  }
+  
+  .star-wars {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    height: 800px;
+    color: #feda4a;
+    font-family: 'Pathway Gothic One', sans-serif;
+    font-size: 500%;
+    font-weight: 600;
+    letter-spacing: 6px;
+    line-height: 150%;
+    perspective: 400px;
+    text-align: justify;
+  }
+  
+  .crawl {
+    position: relative;
+    top: 99999px;
+    transform-origin: 50% 100%;
+    animation: crawl 60s linear;
+  }
+  
+  .crawl > .title {
+    font-size: 90%;
+    text-align: center;
+  }
+  
+  .crawl > .title h1 {
+    margin: 0 0 100px;
+    text-transform: uppercase;
+  }
+  
+  @keyframes crawl {
+    0% {
+      top: -100px;
+      transform: rotateX(20deg)  translateZ(0);
+    }
+    100% { 
+      top: -6000px;
+      transform: rotateX(25deg) translateZ(-2500px);
+    }
+  }
